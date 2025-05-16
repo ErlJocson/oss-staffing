@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/oss-staffing/static/css/main.ec5e6f24.css",
+    "main.js": "/oss-staffing/static/js/main.9cec722b.js",
+    "index.html": "/oss-staffing/index.html",
+    "main.ec5e6f24.css.map": "/oss-staffing/static/css/main.ec5e6f24.css.map",
+    "main.9cec722b.js.map": "/oss-staffing/static/js/main.9cec722b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec5e6f24.css",
+    "static/js/main.9cec722b.js"
+  ]
+}
