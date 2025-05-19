@@ -4,15 +4,15 @@ import { NavLink } from "react-router-dom";
 export default function NavigationBar() {
   return (
     <>
-      <Header className="shadow">
-        <img src={process.env.PUBLIC_URL + "/Images/HGSLogo.png"} alt="" />
+      <Header>
+        <img src={process.env.PUBLIC_URL + "/Images/HGSLogo.svg"} alt="" />
         <div>
           <nav>
-            <MyLink to="/" end>
-              Home
-            </MyLink>
-            <MyLink to="/services">Services</MyLink>
-            <MyLink to="/request-quotations">Request Quotations</MyLink>
+            <MyLink to="/">SERVICES</MyLink>
+            <MyLink to="/pricing">PRICING</MyLink>
+            <MyLink to="/insights">INSIGHTS</MyLink>
+            <MyLink to="/about">ABOUT</MyLink>
+            <MyLink to="/contact-us">CONTACT US</MyLink>
           </nav>
         </div>
       </Header>
@@ -21,12 +21,13 @@ export default function NavigationBar() {
 }
 
 const Header = styled.div`
+  position: sticky;
+  top: 0;
   height: 8vh;
-  background-color: rgba(0, 20, 45, 0.5);
+  background-color: rgba(0, 20, 45, 1);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
   img {
     height: 50px;
     margin-left: 40px;
@@ -42,6 +43,7 @@ const MyLink = styled(NavLink)`
   padding: 0 5px;
   color: white;
   text-decoration: none;
+  font-weight: bold;
 
   &.active {
     color: #cc0066;

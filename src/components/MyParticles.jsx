@@ -23,12 +23,12 @@ const ParticleComponent = () => {
       fpsLimit: 240,
       particles: {
         color: {
-          value: "#ffffff",
+          value: "rgba(255, 255, 255, .2)",
         },
         links: {
           enable: true,
           distance: 100,
-          color: "#ffffff",
+          color: "rgba(255, 255, 255, .2)",
           opacity: 0.4,
           width: 1,
         },
@@ -43,7 +43,7 @@ const ParticleComponent = () => {
           density: {
             enable: true,
           },
-          value: 300,
+          value: 150,
         },
         opacity: {
           value: {
