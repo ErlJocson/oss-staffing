@@ -1,3 +1,5 @@
+//  @media screen and (max-width: 800px) {}
+
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
