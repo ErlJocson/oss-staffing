@@ -92,7 +92,7 @@ export default function Services() {
         </FooterTitleContainer>
         <CardFooterContainer>
           <CardFooter>
-            <h3>EMPLOYEE SATISFACTION RATE</h3>
+            <h3>EMPLOYEE SATISFACTION RATE</h3> <hr />
             <p>
               Our annula staff satisfaction survey has consistently exceeded
               92.0% outperforming the industry average by 16.0%. this reflects
@@ -101,7 +101,7 @@ export default function Services() {
             </p>
           </CardFooter>
           <CardFooter>
-            <h3>WORD-CLASS FACILITIES</h3>
+            <h3>WORD-CLASS FACILITIES</h3> <hr />
             <p>
               Our offices are location in A-grade buildings within Manila's
               premier business hub, Bonifacio Global City. These modern spaces
@@ -110,7 +110,7 @@ export default function Services() {
             </p>
           </CardFooter>
           <CardFooter>
-            <h3>SPECIALIST IN LARGE TEAMS</h3>
+            <h3>SPECIALIST IN LARGE TEAMS</h3> <hr />
             <p>
               We support publicly listed and private equity-backed clients with
               large, multifunctional teams. Our expertise in scaling operations
@@ -119,7 +119,24 @@ export default function Services() {
             </p>
           </CardFooter>
         </CardFooterContainer>
-        <FinalFooterContainer></FinalFooterContainer>
+        <FinalFooterContainer>
+          <FinalFooterContentContainer>
+            <h1>Empowering</h1>
+            <h3>Local Workforce for Innovation</h3>
+            <p>
+              Offshoring time-intensive tasks enabled local employees to focus
+              on strategic growth and delivering exceptional customer service
+            </p>
+          </FinalFooterContentContainer>
+          <FinalFooterContentContainer>
+            <h1>Streamlining</h1>
+            <h3>Business Operations Efficiency</h3>
+            <p>
+              Transitioning to full-time offshore teams gave the company more
+              control, improving service quality and boosting efficiency
+            </p>
+          </FinalFooterContentContainer>
+        </FinalFooterContainer>
       </MainFooterContainer>
     </ServicesMainContainer>
   );
@@ -177,7 +194,7 @@ const TopIntro = styled.div`
 
   button {
     padding: 15px 20px;
-    background-color: black;
+    background-color: #b90462;
     color: white;
     font-size: 20px;
     cursor: pointer;
@@ -249,11 +266,49 @@ const MainFooterContainer = styled.div`
 const FooterTitleContainer = styled.div`
   * {
     margin: 20px 0;
+    text-align: center;
   }
 `;
 
-const CardFooterContainer = styled.div``;
+const CardFooterContainer = styled.div`
+  display: flex;
+  hr {
+    height: 6px;
+    background-color: #00b0f0;
+    border: none;
+    margin: 10px 0;
+  }
+`;
 
-const CardFooter = styled.div``;
+const CardFooter = styled.div`
+  margin: 20px;
+  padding: 20px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+`;
 
-const FinalFooterContainer = styled.div``;
+const FinalFooterContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const FinalFooterContentContainer = styled.div`
+  width: 40%;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  h1 {
+    color: #38b6ff;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: 10px 0;
+  }
+`;
