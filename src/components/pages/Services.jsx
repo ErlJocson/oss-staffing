@@ -144,10 +144,10 @@ const TopIntro = styled.div`
   background-size: cover;
   background-position: center;
   height: 70%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 6px solid #00b0f0;
 
   h1,
   h3,
@@ -208,17 +208,49 @@ const AllProductContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 90%;
+  width: 50%;
 `;
 
 const ProductContainer = styled.div`
-  width: 50px;
-  background-color: red;
+  width: 250px;
+  height: 280px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  button {
+    padding: 8px 12px;
+    background-color: #b90462;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+  }
+
+  p {
+    margin: 20px 0;
+    text-align: center;
+  }
 `;
 
-const MainFooterContainer = styled.div``;
+const MainFooterContainer = styled.div`
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
-const FooterTitleContainer = styled.div``;
+const FooterTitleContainer = styled.div`
+  * {
+    margin: 20px 0;
+  }
+`;
 
 const CardFooterContainer = styled.div``;
 

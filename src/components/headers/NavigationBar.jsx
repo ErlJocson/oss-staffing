@@ -41,9 +41,9 @@ const Header = styled.div`
 const MyLink = styled(NavLink)`
   margin: 0 20px;
   padding: 0 5px;
-  color: white;
   text-decoration: none;
   font-weight: bold;
+  color: white;
 
   &.active {
     color: #cc0066;
