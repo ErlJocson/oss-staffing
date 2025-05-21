@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/oss-staffing/static/css/main.ec5e6f24.css",
-    "main.js": "/oss-staffing/static/js/main.530983c9.js",
+    "main.js": "/oss-staffing/static/js/main.30434fc0.js",
     "index.html": "/oss-staffing/index.html",
     "main.ec5e6f24.css.map": "/oss-staffing/static/css/main.ec5e6f24.css.map",
-    "main.530983c9.js.map": "/oss-staffing/static/js/main.530983c9.js.map"
+    "main.30434fc0.js.map": "/oss-staffing/static/js/main.30434fc0.js.map"
   },
   "entrypoints": [
     "static/css/main.ec5e6f24.css",
-    "static/js/main.530983c9.js"
+    "static/js/main.30434fc0.js"
   ]
 }
