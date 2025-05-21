@@ -164,7 +164,21 @@ const TopIntro = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 6px solid #00b0f0;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background: #00b0f0;
+    transform: skewY(2deg);
+    transform-origin: bottom right;
+  }
 
   h1,
   h3,
@@ -255,12 +269,11 @@ const ProductContainer = styled.div`
 `;
 
 const MainFooterContainer = styled.div`
-  width: 90%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #0f172a;
 `;
 
 const FooterTitleContainer = styled.div`

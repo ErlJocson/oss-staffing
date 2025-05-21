@@ -74,6 +74,8 @@ const Header = styled.div`
   div {
     margin-right: 40px;
   }
+
+  z-index: 10;
 `;
 
 const MyLink = styled(NavLink)`
