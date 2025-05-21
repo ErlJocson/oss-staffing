@@ -1,4 +1,14 @@
+import { FaPuzzlePiece } from "react-icons/fa";
 import styled from "styled-components";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { FaFolderOpen } from "react-icons/fa";
+import { BsCalculator } from "react-icons/bs";
+import { GrCloudComputer } from "react-icons/gr";
+import { FaGithubAlt } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
+import { RiUserSearchLine } from "react-icons/ri";
+import { FaRegHandshake } from "react-icons/fa6";
+import { GrCluster } from "react-icons/gr";
 
 export default function Services() {
   return (
@@ -28,6 +38,8 @@ export default function Services() {
 
       <AllProductContainer>
         <ProductContainer>
+          <RiCustomerService2Fill size={70} />
+
           <h3>Customer Service</h3>
           <p>
             Enhance customer experience, improve customer satisfaction, and
@@ -37,6 +49,7 @@ export default function Services() {
         </ProductContainer>
 
         <ProductContainer>
+          <FaFolderOpen size={70} />
           <h3>Back office support</h3>
           <p>
             Leverage cost-effective labor for managing repetitive tasks like
@@ -46,6 +59,7 @@ export default function Services() {
         </ProductContainer>
 
         <ProductContainer>
+          <BsCalculator size={70} />
           <h3>Finance & Accounting</h3>
           <p>
             Employ offshore professionals to reduce labor costs while ensuring
@@ -55,6 +69,8 @@ export default function Services() {
         </ProductContainer>
 
         <ProductContainer>
+          <GrCloudComputer size={70} />
+
           <h3>Digital Marketing</h3>
           <p>
             Enhance customer experience, improve customer satisfaction, and
@@ -64,6 +80,7 @@ export default function Services() {
         </ProductContainer>
 
         <ProductContainer>
+          <FaGithubAlt size={70} />
           <h3>IT & Development</h3>
           <p>
             Levlerage cost-effective labor for managing repetitive tasks like
@@ -73,6 +90,8 @@ export default function Services() {
         </ProductContainer>
 
         <ProductContainer>
+          <MdAttachMoney size={70} />
+
           <h3>Sales Enablement</h3>
           <p>
             Employ offshore professionals to reduce labor costs while ensuring
@@ -81,6 +100,50 @@ export default function Services() {
           <button>ORDER NOW</button>
         </ProductContainer>
       </AllProductContainer>
+
+      <SomeExtraDesignContainer>
+        <HeaderExtraDesign>
+          <h1>PROVEN OFFSHORE STAFFING PROCESS FROM START TO FINISH</h1>
+          <p>
+            Our detailed, step-by-step approach ensures that you receive
+            tailored staffing solutions, perfectly aligned with your business
+            objectives, throughout every stage of the process.
+          </p>
+        </HeaderExtraDesign>
+        <ContentContainerExtraDesign>
+          <ContentExtraDesign>
+            <GrCluster size={70} />
+            <h3>Step 1</h3>
+            <p>
+              Assess business needs and formulate tailored staffing strategies
+            </p>
+          </ContentExtraDesign>
+
+          <ContentExtraDesign>
+            <FaPuzzlePiece size={70} />
+            <h3>Step 2</h3>
+            <p>Define job roles, responsibilities, and expected outcomes</p>
+          </ContentExtraDesign>
+
+          <ContentExtraDesign>
+            <RiUserSearchLine size={70} />
+
+            <h3>Step 3</h3>
+            <p>
+              Facilitate smooth hiring through seamless onboarding processes
+            </p>
+          </ContentExtraDesign>
+
+          <ContentExtraDesign>
+            <FaRegHandshake size={70} />
+
+            <h3>Step 4</h3>
+            <p>
+              Offer continuous support and maximize the value of offshore teams
+            </p>
+          </ContentExtraDesign>
+        </ContentContainerExtraDesign>
+      </SomeExtraDesignContainer>
 
       <MainFooterContainer>
         <FooterTitleContainer>
@@ -138,6 +201,46 @@ export default function Services() {
           </FinalFooterContentContainer>
         </FinalFooterContainer>
       </MainFooterContainer>
+
+      <MoreFooterNotesContainer>
+        <h1>HGS INSIGHTS</h1>
+        <ContentsContainer>
+          <TheContents>
+            <img src="" alt="" />
+            <h3>OFFSHORING BACK-OFFICE ROLES TO THE PHILIPPINES</h3>
+            <p>
+              Tap into the Philippines’ skilled and English-proficient workforce
+              for back-office roles such as data entry, finance, and IT support.
+              HGS OSS helps businesses build efficient offshore teams, enhancing
+              productivity and enabling growth
+            </p>
+          </TheContents>
+
+          <TheContents>
+            <img src="" alt="" />
+            <h3>FOSTERING DEI WITH AN INCLUSIVE SOCIAL MEDIA MANAGER</h3>
+            <p>
+              Build authentic connections by championing diversity and inclusion
+              on social media. An inclusive social media manager ensures
+              accessible, respectful, and engaging content that reflects your
+              brand’s values
+            </p>
+          </TheContents>
+
+          <TheContents>
+            <img src="" alt="" />
+            <h3>
+              THE SUSTAINABLE OFFSHORE STRATEGY: BRIDGING THE TALENT SHORTAGE
+            </h3>
+            <p>
+              The global talent shortage is disrupting business growth across
+              industries. Offshoring provides a strategic solution by giving
+              companies access to skilled professionals, reducing operational
+              costs, and enabling round-the-clock productivity
+            </p>
+          </TheContents>
+        </ContentsContainer>
+      </MoreFooterNotesContainer>
     </ServicesMainContainer>
   );
 }
@@ -238,15 +341,15 @@ const AllProductContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  width: 50%;
+  margin: 0 auto 50px;
+  width: 70%;
 `;
 
 const ProductContainer = styled.div`
-  width: 250px;
-  height: 280px;
+  width: 20%;
+  height: 40%;
   margin: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -266,14 +369,19 @@ const ProductContainer = styled.div`
     margin: 20px 0;
     text-align: center;
   }
+
+  h3 {
+    margin-top: 10px;
+  }
 `;
 
 const MainFooterContainer = styled.div`
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0f172a;
+  background-color: rgba(15, 23, 42, 0.4);
 `;
 
 const FooterTitleContainer = styled.div`
@@ -287,8 +395,8 @@ const CardFooterContainer = styled.div`
   display: flex;
   hr {
     height: 6px;
-    background-color: #00b0f0;
     border: none;
+    background-color: #b90462;
     margin: 10px 0;
   }
 `;
@@ -297,7 +405,7 @@ const CardFooter = styled.div`
   margin: 20px;
   padding: 20px;
   height: 200px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   width: 400px;
   text-align: center;
@@ -307,13 +415,14 @@ const FinalFooterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 
 const FinalFooterContentContainer = styled.div`
   width: 40%;
   margin: 20px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+
   border-radius: 10px;
 
   h1 {
@@ -323,5 +432,71 @@ const FinalFooterContentContainer = styled.div`
 
   h3 {
     margin: 10px 0;
+  }
+`;
+
+const MoreFooterNotesContainer = styled.div`
+  margin: 50px 0;
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+`;
+
+const ContentsContainer = styled.div`
+  width: 90%;
+  margin: auto;
+  display: flex;
+`;
+
+const TheContents = styled.div`
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 30%;
+  height: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
+
+  h3 {
+    text-align: center;
+    margin: 20px 0;
+  }
+`;
+
+const SomeExtraDesignContainer = styled.div`
+  width: 90%;
+  margin: 100px auto 0;
+`;
+
+const HeaderExtraDesign = styled.div`
+  * {
+    text-align: center;
+    margin: 10px 0;
+  }
+`;
+
+const ContentContainerExtraDesign = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ContentExtraDesign = styled.div`
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 20px 0;
   }
 `;
